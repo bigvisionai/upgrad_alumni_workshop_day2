@@ -4,6 +4,6 @@ The [Notebook](https://colab.research.google.com/github/bigvisionai/upgrad_alumn
 
 The python file `opencv-face-authentication.py` runs the face authentication application using the webcam and allows you to 
 
-[ ] Enroll a Face
-[ ] Delist Faces
-[ ] Authenticate a new face
+* Enroll a Face
+* Delist Faces
+* Authenticate a new face
