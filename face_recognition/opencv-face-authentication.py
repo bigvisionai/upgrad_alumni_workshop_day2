@@ -29,7 +29,7 @@ def constraintPoint(p, w, h):
 
 def extractFaceAndFeatures(img):
 	'''
-	The feature extraction process is accomplished in three stages. 
+	The feature extraction process is accomplished in three stages.
 	 - Face detection.
 	 - Face align and crop.
 	 - Feature extraction
@@ -54,7 +54,7 @@ def extractFaceAndFeatures(img):
 		face_align = recognizer.alignCrop(img, faces[1][0])
 		# Extract features.
 		face_features = recognizer.feature(face_align)
-		return faces, face_align, face_features	
+		return faces, face_align, face_features
 	else:
 		print('Unable to read face')
 		return None, None, None
@@ -101,10 +101,10 @@ def overlayInfoAndLock(img, logo, pos=(540, 10)):
   """
 
   # Resize the logo.
-  logo = cv2.resize(logo, None, fx=1.7, fy=1.7)
+  logo = cv2.resize(logo, None, fx=2, fy=2)
   # Offset value for the image of the lock/unlock.
-  symbol_x_offset = pos[0]
-  symbol_y_offset = pos[1]
+  symbol_x_offset = img.shape[1] - logo.shape[1] - 50
+  symbol_y_offset = 50
  
   # Find top left and bottom right coordinates.
   # where to place the lock/unlock image.
