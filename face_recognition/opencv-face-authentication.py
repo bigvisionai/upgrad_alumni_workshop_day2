@@ -103,7 +103,7 @@ def overlayInfoAndLock(img, logo, pos=(540, 10)):
   # Resize the logo.
   logo = cv2.resize(logo, None, fx=2, fy=2)
   # Offset value for the image of the lock/unlock.
-  symbol_x_offset = img.shape[1] - logo.shape[1] - 50
+  symbol_x_offset = img.shape[1] - logo.shape[1] - 150
   symbol_y_offset = 50
  
   # Find top left and bottom right coordinates.
